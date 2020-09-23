@@ -10,6 +10,7 @@ public class SW1 extends ViewableAtomic {
 	boolean testinf1=false;
     boolean send=false;
 	boolean down=false;
+	boolean envoisinf =false;
 	public  SW1() {
 		
         // TODO Auto-generated constructor stub
@@ -51,11 +52,11 @@ public void deltint(){
 		
 		envoisinf=false;
 	}
-			if (phaseIs("6")&&((envoisfail=true))){
+			if (phaseIs("6")&&((envoisinf=true))){
 				
 				
 				holdIn("8", 10);
-				envoisfail=false;
+				envoisinf=false;
 				
 			}
 			
